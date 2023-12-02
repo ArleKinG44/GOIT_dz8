@@ -13,7 +13,8 @@ def get_birthdays_per_week(users):
             delta += 365
         if delta < 7:
             birthday_weekday = (weekday + delta) % 7
-            day = ['Monday','Tuesday','Wednesday','Thursday','Friday','Monday','Monday'] [birthday_weekday]
+            day = ['Monday', 'Tuesday', 'Wednesday', 'Thursday',
+                   'Friday', 'Monday', 'Monday'][birthday_weekday]
             birthdays[day].append(user['name'])
 
     return birthdays
